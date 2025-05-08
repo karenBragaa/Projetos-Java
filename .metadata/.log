@@ -384,3 +384,53 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-05-08 20:00:07.851
+!MESSAGE file:///C:\Users\karen\git\Projetos-Java\Exercicios: not found.
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: file:///C:\Users\karen\git\Projetos-Java\Exercicios: not found.
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:192)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:131)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.components.AsynchronousListOperation.run(AsynchronousListOperation.java:76)
+	at org.eclipse.egit.ui.internal.dialogs.CancelableFuture$1.run(CancelableFuture.java:280)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: file:///C:\Users\karen\git\Projetos-Java\Exercicios: not found.
+	at org.eclipse.jgit.transport.TransportLocal$1.open(TransportLocal.java:100)
+	at org.eclipse.jgit.transport.TransportBundleFile$1.open(TransportBundleFile.java:74)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:525)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:277)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:247)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:158)
+	... 5 more
+
+!ENTRY org.eclipse.egit.core 4 0 2025-05-08 20:00:14.412
+!MESSAGE An exception occurred during push on URI file:///C:\Users\karen\git\Projetos-Java\Exercicios: file:///C:\Users\karen\git\Projetos-Java\Exercicios: not found.
+!STACK 0
+org.eclipse.jgit.errors.NoRemoteRepositoryException: file:///C:\Users\karen\git\Projetos-Java\Exercicios: not found.
+	at org.eclipse.jgit.transport.TransportLocal$1.open(TransportLocal.java:100)
+	at org.eclipse.jgit.transport.TransportBundleFile$1.open(TransportBundleFile.java:74)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:525)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:495)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:256)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:204)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-05-08 20:01:02.878
+!MESSAGE file:///C:\Users\karen\Desktop\JavaProjeto\curso_java02: not found.
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: file:///C:\Users\karen\Desktop\JavaProjeto\curso_java02: not found.
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:192)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:131)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.components.AsynchronousListOperation.run(AsynchronousListOperation.java:76)
+	at org.eclipse.egit.ui.internal.dialogs.CancelableFuture$1.run(CancelableFuture.java:280)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: file:///C:\Users\karen\Desktop\JavaProjeto\curso_java02: not found.
+	at org.eclipse.jgit.transport.TransportLocal$1.open(TransportLocal.java:100)
+	at org.eclipse.jgit.transport.TransportBundleFile$1.open(TransportBundleFile.java:74)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:525)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:277)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:247)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:158)
+	... 5 more
